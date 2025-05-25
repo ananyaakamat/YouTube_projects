@@ -1,9 +1,18 @@
 import requests
 import json
 import os
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
 
 # Get API key from environment variable
 api_key = os.getenv('OPENROUTER_API_KEY', 'your-api-key-here')
+
+# Debug: Check if API key is loaded
+print(f"API key loaded: {'Yes' if api_key != 'your-api-key-here' else 'No'}")
+if api_key == 'your-api-key-here':
+    print("Warning: Using default API key. Check your .env file.")
 
 response = requests.post(
   url="https://openrouter.ai/api/v1/chat/completions",

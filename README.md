@@ -19,7 +19,11 @@ A simple Python script that uses the OpenRouter API to interact with AI models (
 1. Clone this repository
 2. Install required dependencies:
    ```bash
-   pip install requests
+   pip install -r requirements.txt
+   ```
+   Or install manually:
+   ```bash
+   pip install requests python-dotenv
    ```
 3. Set up your API key:
    - Copy `.env.example` to `.env`
