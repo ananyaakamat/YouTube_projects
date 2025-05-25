@@ -1,10 +1,14 @@
 import requests
 import json
+import os
+
+# Get API key from environment variable
+api_key = os.getenv('OPENROUTER_API_KEY', 'your-api-key-here')
 
 response = requests.post(
   url="https://openrouter.ai/api/v1/chat/completions",
   headers={
-    "Authorization": "Bearer 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",
+    "Authorization": f"Bearer {api_key}",
     "Content-Type": "application/json",
     "HTTP-Referer": "<YOUR_SITE_URL>", # Optional. Site URL for rankings on openrouter.ai.
     "X-Title": "<YOUR_SITE_NAME>", # Optional. Site title for rankings on openrouter.ai.
