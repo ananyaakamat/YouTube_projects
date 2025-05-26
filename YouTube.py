@@ -32,10 +32,11 @@ response = requests.post(
   headers=headers,
   data=json.dumps({
     "model": "deepseek/deepseek-chat:free",
+#    "model": "google/gemini-2.0-flash-exp:free",
     "messages": [
       {
         "role": "user",
-        "content": "What is the meaning of life?"
+        "content": "Generate 5 short, catchy, and engaging YouTube Short title for a video about [Why Giving Investment Advice to Friends Is a Bad Idea! 🚨]. The title should be attention-grabbing, use strong language (e.g., 'Never,' 'Avoid,' 'Secret,' 'Worst,' 'Best'), and include relevant emojis for extra appeal. Target keywords related to that topic to improve discoverability. Make it compelling enough to encourage clicks while staying accurate to the content, Limit to 50 characters or less."
       }
     ],
     
