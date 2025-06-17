@@ -83,6 +83,28 @@ Install CppBuild: npm install cppbuild -g
 - ✅ Python project works without C++ interference
 - ✅ Clean development environment
 
+## Extension Suggestions Disabled
+
+### ✅ Configuration Applied:
+
+**Settings added to disable extension recommendations:**
+```json
+{
+    "extensions.ignoreRecommendations": true,
+    "extensions.autoCheckUpdates": false,
+    "extensions.autoUpdate": false
+}
+```
+
+**Extensions.json cleared:**
+- Removed all extension recommendations
+- Empty recommendations array prevents suggestion popups
+
+### Result:
+- ✅ No more extension suggestion notifications
+- ✅ Clean VS Code experience without popups
+- ✅ Manual extension management only
+
 ## Quick Fix Commands
 
 ### Open Command Palette (`Ctrl+Shift+P`) and run:
