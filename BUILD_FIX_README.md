@@ -54,27 +54,31 @@ The "Configure your Build++ steps" and "Build++ problem detected" error typicall
 ## CppBuild Output Tab Errors
 
 ### ❌ Common Output Tab Error:
+
 ```
 Install CppBuild: npm install cppbuild -g
 'd:\Anant\YouTube_projects\.vscode\c_cpp_build.json' file not found.
 ```
 
 ### ✅ Solution Applied:
+
 1. **Disabled C++ Extensions** in workspace settings
 2. **Created minimal c_cpp_build.json** to prevent "file not found" errors
 3. **Added C++ build system disable flags** in settings.json
 
 ### Configuration Added:
+
 ```json
 {
-    "C_Cpp.intelliSenseEngine": "disabled",
-    "C_Cpp.autocomplete": "disabled", 
-    "C_Cpp.errorSquiggles": "disabled",
-    "cppbuild.enabled": false
+  "C_Cpp.intelliSenseEngine": "disabled",
+  "C_Cpp.autocomplete": "disabled",
+  "C_Cpp.errorSquiggles": "disabled",
+  "cppbuild.enabled": false
 }
 ```
 
 ### Result:
+
 - ✅ No more CppBuild errors in Output tab
 - ✅ Python project works without C++ interference
 - ✅ Clean development environment
