@@ -15,7 +15,7 @@ Features:
 - Automatic cleanup of temporary files
 
 Requirements:
-- Excel file: D:\Anant\Youtube\ValueProITGyan\YouTubeVideosList.xlsx
+- Excel file: D:\\Anant\\Youtube\\ValueProITGyan\\YouTubeVideosList.xlsx
 - Sheet: "Shorts_Automation"
 - API key in .env file: OPENROUTER_API_KEY
 
